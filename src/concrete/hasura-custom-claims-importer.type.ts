@@ -10,7 +10,9 @@ export class HasuraCustomClaimsImporter implements ICustomClaimsImporter {
     if (user.email) customClaims['x-hasura-email'] = user.email;
     if (user.username) customClaims['x-hasura-username'] = user.username;
     if (user?.roles?.length > 0) {
-      const roles = user.roles.map((userRole) => userRole.role.name);
+      const roles = user.roles.map(
+        (userRole) => userRole.role.name ?? userRole.role,
+      );
       customClaims['x-hasura-default-role'] = roles[0];
       customClaims['x-hasura-allowed-roles'] = roles;
     }
