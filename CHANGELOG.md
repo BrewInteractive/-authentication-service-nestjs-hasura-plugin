@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.2.1](https://github.com/BrewInteractive/authentication-service-nestjs-hasura-plugin/compare/v1.2.0...v1.2.1) (2024-10-02)
+
+
+### Bug Fixes
+
+* fix userRole name mapping as either role.name or role ([5f46437](https://github.com/BrewInteractive/authentication-service-nestjs-hasura-plugin/commit/5f4643709356894fbf57990d6c358a1a9e120e32))
+
 ## [1.2.0](https://github.com/BrewInteractive/authentication-service-nestjs-hasura-plugin/compare/v1.1.0...v1.2.0) (2024-05-30)
 
 
